@@ -1,0 +1,123 @@
+:root {
+    --clr-dark: #0c1022;
+    --clr-red: crimson;
+    --clr-green: rgb(0, 170, 0);
+    --clr-orange: orangered;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lucida Sans', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--clr-dark);
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 60px;
+    border-radius: 10px;
+    background-color: rgb(170, 255, 255);
+}
+
+div {
+    margin: 40px auto;
+}
+
+button {
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+    transition: .2s;
+}
+
+.green {
+    color: var(--clr-green);
+}
+
+.red {
+    color: var(--clr-red);
+}
+
+.orange {
+    color: var(--clr-orange)
+}
+
+.counter,
+.multiplier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px auto auto;
+}
+
+.counter button {
+    padding: 6px 12px 4px;
+    font-size: 1.3rem;
+}
+
+.counter input {
+    width: 80px;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 10px 0;
+    padding-left: 10px;
+    outline: none;
+}
+
+.multiplier button {
+    padding: 6px 12px 4px;
+    font-size: 1.2rem;
+    margin: 10px 30px 40px 0;
+    border: var(--clr-orange) 2px solid;
+    color: var(--clr-dark);
+}
+
+.multiplier button:hover {
+    background-color: var(--clr-orange);
+    color: white;
+}
+
+.multiplier input {
+    width: 80px;
+    padding: 5px 0 5px 12px;
+    margin: 10px 0 40px 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: var(--clr-dark);
+    border: 2px solid var(--clr-orange);
+    border-right: 0;
+    outline: none;
+}
+
+#plus-btn {
+    color: var(--clr-green);
+    border: var(--clr-green) 2px solid;
+}
+
+#plus-btn:active {
+    background-color: var(--clr-green);
+    color: white;
+    border: var(--clr-green) 2px solid;
+}
+
+#minus-btn {
+    color: var(--clr-red);
+    border: var(--clr-red) 2px solid;
+}
+
+#minus-btn:active {
+    background-color: var(--clr-red);
+    color: white;
+    border: var(--clr-red) 2px solid;
+}
